@@ -1,2 +1,0 @@
-# SierraMountainBikes
-E-Commerce Application
