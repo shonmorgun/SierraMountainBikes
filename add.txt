@@ -1,0 +1,42 @@
+<form method="post" id="form" action="">
+  <fieldset>
+    <legend>INCOMING MERCHANDISE</legend></br>
+    <div class="row" id="table">
+      <div class="col-sm-8"></br>
+        <div class="row">
+          <div class="col-sm-4">
+            <label>SKU <input type="text" name="sku" id="sku" size="10" placeholder="XXX-XXX"/></label>
+          </div>
+          <div class="col-sm-4">
+            <label>QUANTITY <input type="text" name="qty" id="qty" min="1" size="10"/></label>
+          </div>
+          <div class="col-sm-4">
+            <label>DATE <input type="text" name="date" id="date" size="10" placeholder="mm/dd/yyyy" /></label>
+          </div>
+        </div></br><hr>
+        <div class="row" id="data">
+          <div class="col-sm-3">
+            <label>Vendor: <span id="vendor"></span></label>
+          </div>
+          <div class="col-sm-3">
+            <label>Category: <span id="category"></span></label>
+          </div>
+          <div class="col-sm-3">
+            <label>MID: <span id="mid"></span></label></br></br>
+          </div>
+          <div class="col-sm-3">
+            <label>In Stock: <span id="stock"></span></label></br></br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" id="img">
+        <img id="pic" style="height:200px;" >
+      </div>
+    </div>
+  </fieldset>
+  <div id="message_line">&nbsp;</div>
+  <div id="button_panel">
+    <input type="reset" value="CLEAR" id="reset"/>
+    <input type="button" value="ADD ITEMS" id="submit"/>
+  </div>
+</form>

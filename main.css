@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  font: 15px "Open Sans", sans-serif;
+  margin: 20px 50px;
+  height: 100%;
+  background: #F9F8FD;
+  min-width: 1400px;
+  width: auto !important;
+}
+
+#logo{
+  height: 120px;
+  float: left;
+}
+#tabs{
+  margin-top: 70px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+}
+#logout{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #412894;
+  width: 130px;
+  border: 1px solid #412894;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
+  margin-top: -19px;
+}
+#logout:hover{
+  background: #6341D0;
+}
+#user{
+  font-family: "Roboto", sans-serif;
+  width: 130px;
+  border: 1px solid #412894;
+  padding: 15px;
+  color: #412894;
+  font-size: 14px;
+  float: right;
+  margin-top: -19px;
+  text-align: center;
+}
+
+#tabs-1, #tabs-2{
+  text-align: center;
+}
+
+#table{
+  min-width: 1400px;
+}
+#button_panel{
+  text-align: center;
+}
+#button_panel input{
+  width: 180px;
+  height: 40px;
+  margin-left: 15px;
+  margin-right: 15px
+}
+#reset, #submit{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #56A717;
+  width: 120px;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#submit{
+  background: #412894;
+}
+#reset:hover, #submit:hover{
+  background: #6EC32C;
+}
+#submit:hover{
+  background: #6341D0;
+}
+#message_line{
+  padding: 10px 0 10px;
+  text-align: center;
+  font-size: 17px;
+  color: red;
+}
+
+.form_error{
+  border:  1px solid #BB2004;
+  background-color: #FFA8A8;
+}
+
+.demoHeaders{
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 120px;
+  font-size: 25px;
+}
+.ui-helper-hidden {
+  display: none;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+  clear: both;
+}
+.ui-helper-clearfix {
+  min-height: 0; /* support: IE7 */
+}
+.ui-front {
+  z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+
+.ui-tabs {
+  position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+  padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 1px .2em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+  cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 1em 1.4em;
+  background: none;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+  font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+.ui-widget-content {
+  border: 1px solid #B3AFD4;
+  background: #fcfcfc;
+}
+.ui-widget-header {
+  border: 1px solid #B3AFD4;
+  background: #E1DFF6;
+  color: #433f38;
+  font-weight: bold;
+}
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #459E01;
+  background: #56A717;
+  font-weight: bold;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #459E01;
+  background: #6EC32C;
+  font-weight: bold;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #B3AFD4;
+  background: #fcfcfc;
+  font-weight: bold;
+  color: #459e00;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #459e00;
+  text-decoration: none;
+}
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 6px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 6px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 6px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 6px;
+}

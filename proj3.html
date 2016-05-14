@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sierra Mountain Bike</title>
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Exo:500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" /> 
+	<link id="indexcss" rel="stylesheet" type="text/css" href="proj3/proj3.css"/>
+
+	<script type="text/javascript" src="/jquery/jquery.js"></script>
+	<!-- jQuery UI Library -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script id="indexjs" type="text/javascript"	src="proj3/proj3.js"></script>
+	<script id="indexjs" type="text/javascript"	src="proj3/shopping_cart.js"></script>
+	<script id="indexjs" type="text/javascript"	src="proj3/checkout.js"></script>
+</head>
+<body>
+	<div id="banner">
+		<div id="logo"></div>
+		<div id="menu">
+			<ul style="list-style: none;">
+				<li><span id="bike">BIKES</span></li>
+				<li><span id="innovation">INNOVATION</span></li>
+				<li><span id="about">ABOUT</span></li>
+			</ul>
+		</div>
+	</div>
+	<div id="cart">
+		<div id="icon"></div>
+		<div id="count">0</div>
+		<div id="cart_content"></div>
+	</div>
+	<div id="list">
+		<div id="categories">
+			<p class="all" name="all">RIDING STYLES</p>
+			<table style="width:100%" height="85%">
+				<tr>
+					<td class="cat" name="c1">OVERMOUTAIN</td>
+					<td class="cat" name="c2">CROSS COUNTRY</td> 
+				</tr>
+				<tr>
+					<td class="cat" name="c3">TRAIL</td>
+					<td class="cat" name="c4">XC SPORT</td>
+				</tr>
+				<tr>
+					<td class="cat" name="c5">GRAVITY</td>
+					<td class="cat" name="c6">FAT BIKE</td>
+				</tr>
+			</table>
+		</div>
+		<div id="brands">
+			<p class="all" name="all">BRANDS</p>
+			<table style="width:100%" height="85%">
+				<tr>
+					<td class="ven" name="b1" style="width:30%"><img src="/jadrn032/pic/logo/trek.png"></td>
+					<td class="ven" name="b2" style="width:40%"><img src="/jadrn032/pic/logo/specialized.png"></td> 
+					<td class="ven" name="b3" style="width:30%"><img src="/jadrn032/pic/logo/cannondale.png"></td>
+				</tr>
+				<tr>
+					<td class="ven" name="b4"><img src="/jadrn032/pic/logo/scott.png"></td>
+					<td class="ven" name="b5"><img src="/jadrn032/pic/logo/yeti.png"></td>
+					<td class="ven" name="b6"><img src="/jadrn032/pic/logo/kona.png"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="dialog">
+	</div>
+	<div id="customer_info">
+		<div class="row">
+			<div class='col-sm-4' id="billing_info">
+				<div id="billing_placer">
+					<span style="font-size:22px">Billing Address</span><br>
+					Full name:<br>
+					<input type="text" name="fullname"><br>
+					Address line 1:<br>
+					<input type="text" name="address1"><br>
+					Address line 2:<br>
+					<input type="text" name="address2"><br>
+					City:<br>
+					<input type="text" name="city"><br>
+					State:<br>
+					<input type="text" name="state"><br>
+					ZIP:<br>
+					<input type="text" name="zip"><br>
+					Phone number:<br>
+					<input type="text" name="phone"><br>
+				</div>
+				<input type="checkbox" id="checkbox" name="same" value="same"> Ship to the same address.<br>
+				<div id="card_info">
+					<span style="font-size:22px">Payment Method</span><br>
+					<table>
+						<tr>
+							<td>Name on card:</td>
+							<td>Card number:</td>
+							<td>Expiration date:</td>
+						</tr>
+						<tr>
+							<td><input type="text" name="card_name"></td>
+							<td><input type="text" name="card_name"></td>
+							<td>
+								<select>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								<select>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col-sm-4' id="shipping_info">
+				<span style="font-size:22px">Shipping Address</span><br>
+				Full name:<br>
+				<input type="text" name="s_fullname"><br>
+				Address line 1:<br>
+				<input type="text" name="s_address1"><br>
+				Address line 2:<br>
+				<input type="text" name="s_address2"><br>
+				City:<br>
+				<input type="text" name="s_city"><br>
+				State:<br>
+				<input type="text" name="s_state"><br>
+				ZIP:<br>
+				<input type="text" name="s_zip"><br>
+				Phone number:<br>
+				<input type="text" name="s_phone"><br>
+			</div>
+			<div class='col-sm-4' id="order_info">
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="products">
+		</div>
+		<div id="static">
+			<div id="main">
+				<div id="c1" class="row">
+					<div id="c1a" class="col-sm-4 all" name="all"></div>
+					<div id="c1b" class="col-sm-8">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="/jadrn032/pic/c11.jpg" alt="c1b1">
+								</div>
+
+								<div class="item">
+									<img src="/jadrn032/pic/c12.jpg" alt="c1b2">
+								</div>
+								<div class="item">
+									<img src="/jadrn032/pic/c13.jpg" alt="c1b2">
+								</div>
+							</div>
+
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="c2" class="ven" name="b2"></div>
+				<div id="c3" class="ven" name="b5"></div>
+			</div>
+			<div id="display_innovation">
+			</div>
+			<div id="display_about"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div></div>
+	</div>
+</body>
+</html>
